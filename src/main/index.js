@@ -21,6 +21,10 @@ function createWindow() {
     height: 563,
     useContentSize: true,
     width: 1000,
+    center: true,
+    webPreferences: {
+      nodeIntegration: true,
+    }
   });
 
   mainWindow.loadURL(winURL);
